@@ -69,7 +69,7 @@ function App() {
   return (
     <main className="container m-auto grid min-h-screen grid-rows-[auto,1fr,auto] px-4">
         <header className="text-xl font-bold leading-[3rem]">buscamates</header>
-          <img src="/capibaramate.png" className="h-40 w-30 flex items-center justify-center flex-col gap-4 text-center"/>
+          <img src="/capibaramate.png" className="h-35 w-20 flex items-center justify-center flex-col gap-4 text-center"/>
         <section className='flex items-center justify-center flex-col gap-4 text-center'>
         <section className="py-12">
             {MATRIX.map((row, rowIndex) => (
