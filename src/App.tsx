@@ -71,13 +71,13 @@ function App() {
         <header className="text-xl font-bold leading-[3rem]">buscamates</header>
           <img src="/capibaramate.png" className="h-40 w-30 flex items-center justify-center flex-col gap-4 text-center"/>
         <section className='flex items-center justify-center flex-col gap-4 text-center'>
-        <section className="py-8">
+        <section className="py-12">
             {MATRIX.map((row, rowIndex) => (
             <article key={String(rowIndex)} className="flex">
                 {row.map((cell, cellIndex) => (
                     <div 
                     key={`${rowIndex}-${cellIndex}`} 
-                    className={`h-8 w-8 border flex items-center justify-center ${clicked.includes(`${rowIndex}-${cellIndex}`) ? 'bg-white/55' : 'bg-transparent'}`}
+                    className={`h-12 w-12 border flex items-center justify-center ${clicked.includes(`${rowIndex}-${cellIndex}`) ? 'bg-white/55' : 'bg-transparent'}`}
                     >
                         {clicked.includes(`${rowIndex}-${cellIndex}`) ? (
                         <span>{cell === 'M' ? "🧉" : cell === 0 ? null : cell}</span>
