@@ -49,15 +49,20 @@ function App() {
         // Si gane
         if (clicked.length + 1 === GRID_SIZE ** 2 - GRID_SIZE) {
             setStatus('won');
+            const up = new Audio('/gameup.wav')
+
+            up.volume = 0.4;
+
+            up.play();
              // si perdi
         } else if (MATRIX[rowIndex][cellIndex] === 'M') {
             setStatus('lost');
 
-            const boo = new Audio('/boo.mp3')
+            const over = new Audio('/gameover.wav')
 
-            boo.volume = 0.4;
+            over.volume = 0.4;
 
-            boo.play();
+            over.play();
         }
     }
 
