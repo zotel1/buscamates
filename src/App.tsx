@@ -68,8 +68,11 @@ function App() {
 
   return (
     <main className="container m-auto grid min-h-screen grid-rows-[auto,1fr,auto] px-4">
-        <header className="text-xl font-bold leading-[3rem]">buscamates</header>
-          <img src="/capibaramate.png" className="h-35 w-20 flex items-center justify-center flex-col gap-4 text-center"/>
+        <header className="text-xl font-bold leading-[6rem]">
+              <h2>buscamates</h2>
+              <img src="/capibaramate.png" className="h-35 w-20 flex items-center justify-center flex-col gap-4 text-center" />
+            </header>
+          
         <section className='flex items-center justify-center flex-col gap-4 text-center'>
         <section className="py-12">
             {MATRIX.map((row, rowIndex) => (
@@ -106,7 +109,7 @@ function App() {
               </div>
             )}
         </section>
-        <footer className="text-center leading-[3rem] opacity-70">
+        <footer className="text-center leading-[6rem] opacity-70">
             © {new Date().getFullYear()} buscamates
         </footer>
     </main>
