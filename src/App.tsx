@@ -71,7 +71,7 @@ function App() {
                 {row.map((cell, cellIndex) => (
                     <div 
                     key={`${rowIndex}-${cellIndex}`} 
-                    className={`h-8 w-8 border flex items-center justify-center ${clicked.includes(`${rowIndex}-${cellIndex}`) ? 'bg-white/20' : 'bg-transparent'}`}
+                    className={`h-8 w-8 border flex items-center justify-center ${clicked.includes(`${rowIndex}-${cellIndex}`) ? 'bg-white/55' : 'bg-transparent'}`}
                     >
                         {clicked.includes(`${rowIndex}-${cellIndex}`) ? (
                         <span>{cell === 'M' ? "🧉" : cell === 0 ? null : cell}</span>
